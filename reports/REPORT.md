@@ -46,7 +46,7 @@ Chọn một lỗi **có thật** trong bài. Nếu công cụ lỗi khiến b�
 - Quy tắc và hành động sửa: Áp dụng quy tắc "hai vật cùng lớp đỗ sát nhau vẫn là hai instance độc lập". Tôi đã tách mask chung thành hai object `car` riêng biệt, phóng to điều chỉnh khe hở ranh giới giữa hai xe và cắt bớt phần vạch đường.
 - Sau sửa đã Save và export lại chưa? Đã Save trên CVAT và export lại file `medium_instance.zip` vào `submissions/`.
 
-Nếu bạn **đã xem Summary tự đánh giá trên GitHub Actions hoặc tự chạy script**, ghi ngắn một kết quả liên quan lỗi vừa sửa (ví dụ task, metric trước/sau nếu có): Đã chạy script tự đánh giá `scorecard.py`, đạt tổng điểm ba tier là 32.1 / 82 (`easy_semantic`: mIoU 0.763 - 16.1/20; `medium_instance`: mean matched IoU 0.793, P@0.5=0.61, R@0.5=0.65 - 8.1/32; `hard_panoptic`: PQ 0.319 - 7.9/30). Sau khi tách đúng instance, số lượng TP tăng và giảm FP do gộp vật. Scorecard ba tier tối đa **82**, không phải điểm cuối trên 100. Không tự ghi PASS/top 3/bonus; người phụ trách xác nhận theo tiêu chí lớp. Không đưa file ground truth vào fork.
+ Đã chạy script tự đánh giá `scorecard.py`, đạt tổng điểm ba tier là 32.1 / 82 (`easy_semantic`: mIoU 0.763 - 16.1/20; `medium_instance`: mean matched IoU 0.793, P@0.5=0.61, R@0.5=0.65 - 8.1/32; `hard_panoptic`: PQ 0.319 - 7.9/30).
 
 ## 4. Ba ca chưa chắc hoặc đã cân nhắc
 
